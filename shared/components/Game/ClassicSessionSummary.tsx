@@ -81,7 +81,7 @@ export default function ClassicSessionSummary({
 
   return (
     <div className='fixed inset-0 z-50 flex h-full w-full flex-col overflow-x-hidden overflow-y-auto bg-(--background-color)'>
-      <div className='mx-auto flex min-h-full w-full max-w-[1240px] flex-1 flex-col justify-start px-4 py-8 sm:min-h-[100dvh] sm:justify-center sm:px-8 sm:py-20 lg:px-12 lg:py-16'>
+      <div className='mx-auto flex min-h-full w-full max-w-7xl flex-1 flex-col justify-start px-4 py-8 sm:min-h-[100dvh] sm:justify-center sm:px-8 sm:py-20 lg:px-12 lg:py-16'>
         {/* Header Section */}
         <div className='mb-8 flex flex-col items-center gap-1 text-center select-none sm:mb-12 sm:items-start sm:text-left lg:mb-16'>
           <h1 className='text-3xl font-black tracking-tighter text-(--main-color) lowercase sm:text-5xl lg:text-6xl'>
@@ -97,7 +97,7 @@ export default function ClassicSessionSummary({
           <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4'>
             {/* Accuracy Hero - Col Span 2 */}
             <div className='relative flex flex-col items-center justify-center rounded-3xl border-2 border-(--main-color)/20 bg-(--background-color) p-6 sm:col-span-2 sm:flex-row sm:gap-12 sm:p-10'>
-              <div className='relative flex aspect-square w-full max-w-[140px] flex-col items-center justify-center sm:max-w-[180px]'>
+              <div className='relative flex aspect-square w-full max-w-36 flex-col items-center justify-center sm:max-w-44'>
                 <ResponsiveContainer width='100%' height='100%'>
                   <PieChart>
                     <Pie
@@ -136,7 +136,7 @@ export default function ClassicSessionSummary({
               <div className='mt-6 flex flex-col items-center text-center sm:mt-0 sm:items-start sm:text-left'>
                 <div className='mb-1 flex items-center gap-2'>
                   <Target className='h-5 w-5 text-(--main-color)' />
-                  <span className='text-sm leading-none font-bold tracking-widest text-(--secondary-color) uppercase opacity-60'>
+                <span className='text-sm leading-none font-bold tracking-wider text-(--secondary-color) uppercase opacity-60'>
                     accuracy
                   </span>
                 </div>
@@ -180,7 +180,7 @@ export default function ClassicSessionSummary({
             <div className='flex flex-col rounded-2xl border-2 border-(--secondary-color)/10 bg-(--background-color) p-5 sm:p-6'>
               <div className='mb-2 flex items-center gap-2'>
                 <Trophy className='h-4 w-4 text-(--secondary-color) opacity-60' />
-                <span className='text-[0.6rem] leading-none font-bold tracking-[0.2em] text-(--secondary-color) uppercase opacity-60'>
+                  <span className='text-xs leading-none font-bold tracking-widest text-(--secondary-color) uppercase opacity-60'>
                   best streak
                 </span>
               </div>
@@ -192,7 +192,7 @@ export default function ClassicSessionSummary({
             <div className='flex flex-col rounded-2xl border-2 border-(--secondary-color)/10 bg-(--background-color) p-5 sm:p-6'>
               <div className='mb-2 flex items-center gap-2'>
                 <Zap className='h-4 w-4 text-(--secondary-color) opacity-60' />
-                <span className='text-[0.6rem] leading-none font-bold tracking-[0.2em] text-(--secondary-color) uppercase opacity-60'>
+                  <span className='text-xs leading-none font-bold tracking-widest text-(--secondary-color) uppercase opacity-60'>
                   avg. speed
                 </span>
               </div>
@@ -204,7 +204,7 @@ export default function ClassicSessionSummary({
             <div className='flex flex-col rounded-2xl border-2 border-(--secondary-color)/10 bg-(--background-color) p-5 sm:p-6'>
               <div className='mb-2 flex items-center gap-2'>
                 <Activity className='h-4 w-4 text-(--secondary-color) opacity-60' />
-                <span className='text-[0.6rem] leading-none font-bold tracking-[0.2em] text-(--secondary-color) uppercase opacity-60'>
+                  <span className='text-xs leading-none font-bold tracking-widest text-(--secondary-color) uppercase opacity-60'>
                   top speed
                 </span>
               </div>
@@ -216,7 +216,7 @@ export default function ClassicSessionSummary({
             <div className='flex flex-col rounded-2xl border-2 border-(--secondary-color)/10 bg-(--background-color) p-5 sm:p-6'>
               <div className='mb-2 flex items-center gap-2'>
                 <Zap className='h-4 w-4 text-(--secondary-color) opacity-60' />
-                <span className='text-[0.6rem] leading-none font-bold tracking-[0.2em] text-(--secondary-color) uppercase opacity-60'>
+                  <span className='text-xs leading-none font-bold tracking-widest text-(--secondary-color) uppercase opacity-60'>
                   answers/min
                 </span>
               </div>
@@ -228,7 +228,7 @@ export default function ClassicSessionSummary({
         </div>
 
         {/* Action Buttons */}
-        <div className='sticky bottom-0 z-10 -mx-4 mt-auto flex w-[calc(100%+2rem)] items-center justify-center gap-3 border-t-2 border-(--border-color) bg-(--background-color) py-4 px-4 select-none sm:static sm:mx-0 sm:w-full sm:justify-start sm:gap-5 sm:border-0 sm:bg-transparent sm:px-0 sm:py-0'>
+        <div className='sticky bottom-0 z-10 -mx-4 mt-auto flex w-auto items-center justify-center gap-3 border-t-2 border-(--border-color) bg-(--background-color) py-4 px-4 select-none sm:static sm:mx-0 sm:w-full sm:justify-start sm:gap-5 sm:border-0 sm:bg-transparent sm:px-0 sm:py-0'>
           <button
             onClick={() => {
               playClick();
