@@ -195,7 +195,7 @@ const MainMenu = () => {
               }}
               className={clsx(
                 'hidden sm:inline-flex',
-                'duration-250 hover:cursor-pointer hover:scale-105',
+                'duration-250 hover:cursor-pointer',
                 'active:scale-100 active:duration-225',
                 'text-(--secondary-color) hover:text-(--main-color)',
               )}

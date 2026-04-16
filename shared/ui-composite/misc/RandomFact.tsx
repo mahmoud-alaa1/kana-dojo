@@ -5,7 +5,7 @@ import { Random } from 'random-js';
 import clsx from 'clsx';
 
 const lightbulbIconClasses =
-  'flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border-b-4 border-(--secondary-color-accent) bg-(--secondary-color) text-(--background-color) motion-safe:animate-float [--float-distance:-2px] [&>svg]:h-4 [&>svg]:w-4';
+  'flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border-b-4 border-(--main-color-accent) bg-(--main-color) text-(--background-color) motion-safe:animate-float [--float-distance:-2px] [&>svg]:h-4 [&>svg]:w-4';
 
 // Module-level cache for facts - prevents refetching on every mount
 let factsCache: string[] | null = null;
