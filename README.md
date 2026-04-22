@@ -11,7 +11,6 @@
   <img alt="Cossistant OSS Program" src="https://cdn.cossistant.com/oss/oss-friends.svg" />
 </a>
 </p>
-<br />
 
 <!--<div id="top"></div>-->
 
